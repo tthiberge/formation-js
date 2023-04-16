@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        const mysteryNumber = 9 //getRandomInt(11)
+
+        function guess () {
+            prompt("Guess a number between 0 and 10)")
+        }
+
+        function isRight (n) {
+            return mysteryNumber === n
+        }
+
+        for (let i = 1; i < 4; i++) {
+            let guessedNumber = guess()
+            console.log(isRight(guessedNumber))
+        }
+
+        console.log(`The number was ${mysteryNumber}`)
+
+
+
+    </script>
+</head>
+<body>
+    <h1>Yopdgdi</h1>
+</body>
+</html>
